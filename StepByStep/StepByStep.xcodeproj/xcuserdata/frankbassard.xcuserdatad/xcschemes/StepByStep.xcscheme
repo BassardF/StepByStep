@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "44D65BB419C442AA0004EF64"
+               BlueprintIdentifier = "44DFD8BE19C4589C0061ED89"
                BuildableName = "StepByStep.app"
                BlueprintName = "StepByStep"
                ReferencedContainer = "container:StepByStep.xcodeproj">
@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "44D65BCC19C442AA0004EF64"
+               BlueprintIdentifier = "44DFD8D519C4589C0061ED89"
                BuildableName = "StepByStepTests.xctest"
                BlueprintName = "StepByStepTests"
                ReferencedContainer = "container:StepByStep.xcodeproj">
@@ -46,7 +46,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "44D65BCC19C442AA0004EF64"
+               BlueprintIdentifier = "44DFD8D519C4589C0061ED89"
                BuildableName = "StepByStepTests.xctest"
                BlueprintName = "StepByStepTests"
                ReferencedContainer = "container:StepByStep.xcodeproj">
@@ -56,7 +56,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "44D65BB419C442AA0004EF64"
+            BlueprintIdentifier = "44DFD8BE19C4589C0061ED89"
             BuildableName = "StepByStep.app"
             BlueprintName = "StepByStep"
             ReferencedContainer = "container:StepByStep.xcodeproj">
@@ -75,7 +75,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "44D65BB419C442AA0004EF64"
+            BlueprintIdentifier = "44DFD8BE19C4589C0061ED89"
             BuildableName = "StepByStep.app"
             BlueprintName = "StepByStep"
             ReferencedContainer = "container:StepByStep.xcodeproj">
@@ -93,7 +93,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "44D65BB419C442AA0004EF64"
+            BlueprintIdentifier = "44DFD8BE19C4589C0061ED89"
             BuildableName = "StepByStep.app"
             BlueprintName = "StepByStep"
             ReferencedContainer = "container:StepByStep.xcodeproj">
