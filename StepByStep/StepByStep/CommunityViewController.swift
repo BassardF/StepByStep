@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  SecondViewController.swift
 //  StepByStep
 //
 //  Created by Frank Bassard on 13/09/2014.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class CommunityViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
