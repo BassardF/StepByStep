@@ -14,6 +14,7 @@ class GoalsViewController: UIViewController, UITableViewDelegate, UITableViewDat
 
     @IBOutlet var goalsTableView: UITableView!
     let cellIdentifier = "cellIdentifier"
+    var selectedGoal = 0
 
     
     override func viewDidLoad() {
@@ -44,10 +45,16 @@ class GoalsViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     // UITableViewDelegate methods
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "ShowMilestones" {
+            var milestoneController : MilestoneViewController = segue.destinationViewController as MilestoneViewController
+            milestoneController.goal = goals[selectedGoal]
+        }
+    }
+    
     func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
-        let alert = UIAlertController(title: "Item selected", message: "You selected item \(indexPath.row)", preferredStyle: UIAlertControllerStyle.Alert)
-        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Cancel, handler: nil))
-        self.presentViewController(alert, animated: true, completion: nil)
+        selectedGoal = indexPath.row
+        self.performSegueWithIdentifier("ShowMilestones", sender: self)
     }
 
 }

@@ -58,11 +58,44 @@
                     <connections>
                         <outlet property="GoalsTableView" destination="tsR-hK-woN" id="5DI-p2-SfT"/>
                         <outlet property="goalsTableView" destination="QHL-c6-Vr6" id="ddn-PA-UOi"/>
+                        <segue destination="Ll4-b4-CTj" kind="push" identifier="ShowMilestones" id="XGd-yD-3Db"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="945" y="-378"/>
+            <point key="canvasLocation" x="889" y="-938"/>
+        </scene>
+        <!--Milestones-->
+        <scene sceneID="MtE-tw-xpU">
+            <objects>
+                <viewController id="Ll4-b4-CTj" customClass="MilestoneViewController" customModule="StepByStep" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BDu-wd-ly7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" id="iG8-k1-72w">
+                                <rect key="frame" x="85" y="108" width="150" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2sd-Bm-8c5">
+                                <rect key="frame" x="16" y="79" width="288" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Milestones" id="OtC-Fg-E7N"/>
+                    <connections>
+                        <outlet property="goalProgressBar" destination="iG8-k1-72w" id="gjO-nl-CV6"/>
+                        <outlet property="goalTitle" destination="2sd-Bm-8c5" id="wzL-EL-HTj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="33Q-wU-KxH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1362" y="-938"/>
         </scene>
         <!--Create-->
         <scene sceneID="FVW-QX-nKC">
@@ -72,18 +105,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9mK-qm-j6w">
-                                <rect key="frame" x="333" y="20" width="26" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="add"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Qkc-uj-vL9">
-                                <rect key="frame" x="16" y="20" width="53" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="back">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title" minimumFontSize="17" clearButtonMode="whileEditing" id="HeM-Mc-vtN">
                                 <rect key="frame" x="16" y="81" width="288" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -123,7 +144,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JVY-e6-U1L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1466" y="-705"/>
+            <point key="canvasLocation" x="889" y="-1603"/>
         </scene>
         <!--Community-->
         <scene sceneID="wg7-f3-ORb">
@@ -219,8 +240,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="add" width="128" height="128"/>
-        <image name="back" width="128" height="128"/>
         <image name="tab-comment" width="30" height="30"/>
         <image name="tab-goal" width="30" height="30"/>
         <image name="tab-group" width="30" height="30"/>

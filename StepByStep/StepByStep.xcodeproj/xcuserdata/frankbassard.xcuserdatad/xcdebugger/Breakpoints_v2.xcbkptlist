@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StepByStep/Milestone.swift"
-            timestampString = "432308002.310821"
+            timestampString = "432484100.502109"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
             landmarkName = "Milestone"
             landmarkType = "3">
          </BreakpointContent>
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StepByStep/GoalsViewController.swift"
-            timestampString = "432427795.995275"
+            timestampString = "432484541.43523"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
             landmarkName = "tableView(_:cellForRowAtIndexPath:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -97,6 +97,80 @@
             endingLineNumber = "22"
             landmarkName = "textView(_:shouldChangeTextInRange:replacementText:)"
             landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StepByStep/MilestoneViewController.swift"
+            timestampString = "432484959.161246"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "MilestoneViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StepByStep.MilestoneViewController.goal.setter : Swift.Optional&lt;StepByStep.Goal&gt;"
+                  moduleName = "StepByStep"
+                  urlString = "file:///Users/frankbassard/Documents/Developer/StepByStep/StepByStep/StepByStep/MilestoneViewController.swift"
+                  timestampString = "432484127.197928"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StepByStep.MilestoneViewController.init (StepByStep.MilestoneViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;ObjectiveC.NSBundle&gt;) -&gt; StepByStep.MilestoneViewController"
+                  moduleName = "StepByStep"
+                  urlString = "file:///Users/frankbassard/Documents/Developer/StepByStep/StepByStep/StepByStep/MilestoneViewController.swift"
+                  timestampString = "432484127.198279"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "53">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StepByStep.MilestoneViewController.init (StepByStep.MilestoneViewController.Type)() -&gt; StepByStep.MilestoneViewController"
+                  moduleName = "StepByStep"
+                  urlString = "file:///Users/frankbassard/Documents/Developer/StepByStep/StepByStep/StepByStep/MilestoneViewController.swift"
+                  timestampString = "432484127.198528"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StepByStep.MilestoneViewController.init (StepByStep.MilestoneViewController.Type)(coder : ObjectiveC.NSCoder) -&gt; StepByStep.MilestoneViewController"
+                  moduleName = "StepByStep"
+                  urlString = "file:///Users/frankbassard/Documents/Developer/StepByStep/StepByStep/StepByStep/MilestoneViewController.swift"
+                  timestampString = "432484127.198859"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

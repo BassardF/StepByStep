@@ -12,8 +12,8 @@ class Goal: NSObject {
         super.init();
     }
     
-    func addMileStone(title : String){
-        milestones.append(Milestone(title: title))
+    func addMileStone(title : String, withDate date : NSDate){
+        milestones.append(Milestone(title: title, withDate : date))
     }
     
     func removeMilestone(milestoneNumber : Int){

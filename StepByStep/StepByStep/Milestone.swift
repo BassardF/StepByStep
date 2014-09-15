@@ -3,9 +3,11 @@ import UIKit
 class Milestone: NSObject {
     var title : String
     var tasks : [Task]
+    var date : NSDate
     
-    init (title : String){
+    init (title : String, withDate date : NSDate){
         self.title = title
+        self.date = date
         tasks = [Task]()
         super.init();
     }
