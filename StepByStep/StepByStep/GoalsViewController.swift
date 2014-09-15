@@ -10,7 +10,7 @@ import UIKit
 
 var goals : [Goal] = [Goal]()
 
-class GoalsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class GoalsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextViewDelegate{
 
     @IBOutlet var goalsTableView: UITableView!
     let cellIdentifier = "cellIdentifier"

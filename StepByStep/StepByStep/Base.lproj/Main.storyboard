@@ -91,6 +91,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                 <connections>
+                                    <action selector="select:" destination="QJk-Ns-sFn" eventType="editingDidEndOnExit" id="Gli-7y-oU2"/>
                                     <outlet property="delegate" destination="u7h-CO-B3Y" id="k3t-Lk-7V8"/>
                                 </connections>
                             </textField>
@@ -100,6 +101,9 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="u7h-CO-B3Y" id="bYW-6Q-kVe"/>
+                                </connections>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

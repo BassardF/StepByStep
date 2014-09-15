@@ -18,7 +18,21 @@ class AddGoalViewController: UIViewController {
         self.goalTitle.becomeFirstResponder()
     }
     
+    func textView(textView: UITextView, shouldChangeTextInRange range: NSRange, replacementText text: String) -> Bool{
+        if text == "\n" {
+            textView.resignFirstResponder()
+            addCurrentGoal()
+            return false;
+        }
+        return true;
+    }
+    
     @IBAction func addGoal(sender: UIBarButtonItem) {
+        addCurrentGoal()
+    }
+    
+    func addCurrentGoal(){
         goals.append(Goal(title: self.goalTitle.text, withDetails : self.goalDetails.text))
+        self.navigationController?.popToRootViewControllerAnimated(true);
     }
 }
