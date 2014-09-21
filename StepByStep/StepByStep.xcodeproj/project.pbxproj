@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		44315ED019C716D300860525 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44315ECF19C716D300860525 /* Images.xcassets */; };
 		446E745619C7255F0025FDAC /* MilestoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446E745519C7255F0025FDAC /* MilestoneViewController.swift */; };
+		449F150019CF05C000E23F2E /* AddMilestoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449F14FF19CF05C000E23F2E /* AddMilestoneViewController.swift */; };
+		449F150219CF179300E23F2E /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449F150119CF179300E23F2E /* TasksViewController.swift */; };
+		449F150519CF1C5E00E23F2E /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449F150419CF1C5E00E23F2E /* AddTaskViewController.swift */; };
 		44DFD8C519C4589C0061ED89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DFD8C419C4589C0061ED89 /* AppDelegate.swift */; };
 		44DFD8C719C4589C0061ED89 /* GoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DFD8C619C4589C0061ED89 /* GoalsViewController.swift */; };
 		44DFD8C919C4589C0061ED89 /* CommunityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DFD8C819C4589C0061ED89 /* CommunityViewController.swift */; };
@@ -34,6 +37,9 @@
 /* Begin PBXFileReference section */
 		44315ECF19C716D300860525 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		446E745519C7255F0025FDAC /* MilestoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MilestoneViewController.swift; sourceTree = "<group>"; };
+		449F14FF19CF05C000E23F2E /* AddMilestoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMilestoneViewController.swift; sourceTree = "<group>"; };
+		449F150119CF179300E23F2E /* TasksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
+		449F150419CF1C5E00E23F2E /* AddTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
 		44DFD8BF19C4589C0061ED89 /* StepByStep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StepByStep.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44DFD8C319C4589C0061ED89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44DFD8C419C4589C0061ED89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +74,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		449F150319CF17E500E23F2E /* GoalPanel */ = {
+			isa = PBXGroup;
+			children = (
+				44DFD8C619C4589C0061ED89 /* GoalsViewController.swift */,
+				44DFD8EF19C63E610061ED89 /* AddGoalViewController.swift */,
+				446E745519C7255F0025FDAC /* MilestoneViewController.swift */,
+				449F14FF19CF05C000E23F2E /* AddMilestoneViewController.swift */,
+				449F150119CF179300E23F2E /* TasksViewController.swift */,
+				449F150419CF1C5E00E23F2E /* AddTaskViewController.swift */,
+			);
+			name = GoalPanel;
+			sourceTree = "<group>";
+		};
 		44DFD8B619C4589C0061ED89 = {
 			isa = PBXGroup;
 			children = (
@@ -91,9 +110,7 @@
 			children = (
 				44315ECF19C716D300860525 /* Images.xcassets */,
 				44DFD8C419C4589C0061ED89 /* AppDelegate.swift */,
-				44DFD8C619C4589C0061ED89 /* GoalsViewController.swift */,
-				44DFD8EF19C63E610061ED89 /* AddGoalViewController.swift */,
-				446E745519C7255F0025FDAC /* MilestoneViewController.swift */,
+				449F150319CF17E500E23F2E /* GoalPanel */,
 				44DFD8C819C4589C0061ED89 /* CommunityViewController.swift */,
 				44DFD8CA19C4589C0061ED89 /* Main.storyboard */,
 				44DFD8EC19C471AA0061ED89 /* Model */,
@@ -241,9 +258,12 @@
 				44DFD8F019C63E610061ED89 /* AddGoalViewController.swift in Sources */,
 				44DFD8E719C471320061ED89 /* Task.swift in Sources */,
 				44DFD8C919C4589C0061ED89 /* CommunityViewController.swift in Sources */,
+				449F150019CF05C000E23F2E /* AddMilestoneViewController.swift in Sources */,
 				44DFD8C519C4589C0061ED89 /* AppDelegate.swift in Sources */,
 				44DFD8E919C4713E0061ED89 /* Milestone.swift in Sources */,
+				449F150519CF1C5E00E23F2E /* AddTaskViewController.swift in Sources */,
 				44DFD8EE19C4722A0061ED89 /* Goal.swift in Sources */,
+				449F150219CF179300E23F2E /* TasksViewController.swift in Sources */,
 				44DFD8C719C4589C0061ED89 /* GoalsViewController.swift in Sources */,
 				446E745619C7255F0025FDAC /* MilestoneViewController.swift in Sources */,
 			);

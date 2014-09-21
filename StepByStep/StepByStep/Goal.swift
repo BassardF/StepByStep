@@ -20,4 +20,21 @@ class Goal: NSObject {
         milestones.removeAtIndex(milestoneNumber)
     }
     
+    func getMilestonesCount() -> Int {
+        return milestones.count
+    }
+    
+    func getCompletedRatio() -> Float {
+        if getMilestonesCount() == 0 {
+            return 0.0
+        }
+        var completedCount = 0
+        for milestone in milestones {
+            if milestone.isDone(){
+                completedCount++
+            }
+        }
+        return Float(completedCount) / Float(getMilestonesCount())
+    }
+    
 }

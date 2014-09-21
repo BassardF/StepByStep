@@ -1,14 +1,10 @@
 import UIKit
 
-var goals : [Goal] = [Goal]()
-var selectedGoal = 0
-var selectedMilestone = 0
+class TasksViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-class GoalsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextViewDelegate{
-
-    @IBOutlet var goalsTableView: UITableView!
-    let cellIdentifier = "goalCellIdentifier"
-
+    let cellIdentifier = "taskCellIdentifier"
+    @IBOutlet var taskTableView: UITableView!
+    var milestone : Milestone?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,23 +21,20 @@ class GoalsViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        return goals.count
+        return goals[selectedGoal].milestones[selectedMilestone].tasks.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
         var cell = tableView.dequeueReusableCellWithIdentifier(self.cellIdentifier) as UITableViewCell
-        cell.textLabel!.text = goals[indexPath.row].title
-        cell.detailTextLabel!.text = goals[indexPath.row].details
+        cell.textLabel!.text = goals[selectedGoal].milestones[selectedMilestone].tasks[indexPath.row].title
+        cell.detailTextLabel!.text = goals[selectedGoal].milestones[selectedMilestone].tasks[indexPath.row].content
         return cell
     }
     
     // UITableViewDelegate methods
     
     func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
-        selectedGoal = indexPath.row
-        self.performSegueWithIdentifier("ShowMilestones", sender: self)
+
     }
-
 }
-

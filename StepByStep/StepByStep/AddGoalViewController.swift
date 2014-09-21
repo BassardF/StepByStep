@@ -1,11 +1,3 @@
-//
-//  AddGoalViewController.swift
-//  StepByStep
-//
-//  Created by Frank Bassard on 14/09/2014.
-//  Copyright (c) 2014 com.frankbassard. All rights reserved.
-//
-
 import UIKit
 
 class AddGoalViewController: UIViewController {
@@ -35,4 +27,5 @@ class AddGoalViewController: UIViewController {
         goals.append(Goal(title: self.goalTitle.text, withDetails : self.goalDetails.text))
         self.navigationController?.popToRootViewControllerAnimated(true);
     }
+
 }

@@ -12,8 +12,8 @@ class Milestone: NSObject {
         super.init();
     }
     
-    func addTask (title : String, withContent content : String, withDate date : NSDate){
-        self.tasks.append(Task(title: title, andContent: content, andDate: date))
+    func addTask (title : String, withContent content : String){
+        self.tasks.append(Task(title: title, andContent: content))
     }
     
     func removeTask (taskNumber : Int){
@@ -36,5 +36,9 @@ class Milestone: NSObject {
     
     func getTasksDoneRatio() -> Double{
         return Double(getDoneTasksNumber()) / Double(getTasksCount())
+    }
+    
+    func isDone() -> Bool {
+        return getTasksDoneRatio() == 1
     }
 }
