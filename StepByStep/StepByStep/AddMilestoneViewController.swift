@@ -1,6 +1,6 @@
 import UIKit
 
-class AddMilestoneViewController: UIViewController {
+class AddMilestoneViewController: UIViewController, UITextFieldDelegate{
 
     @IBOutlet var milestoneTitle: UITextField!
     @IBOutlet var milestoneDatePicker: UIDatePicker!
@@ -15,6 +15,15 @@ class AddMilestoneViewController: UIViewController {
     }
     
     @IBAction func addMilestone(sender: UIBarButtonItem) {
+        addAMilestone()
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool{
+        addAMilestone()
+        return true;
+    }
+    
+    func addAMilestone (){
         goals[selectedGoal].addMileStone(milestoneTitle.text, withDate: milestoneDatePicker.date)
         self.navigationController?.popViewControllerAnimated(true)
     }
