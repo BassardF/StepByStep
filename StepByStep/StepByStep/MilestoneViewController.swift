@@ -13,6 +13,7 @@ class MilestoneViewController: UIViewController, UITableViewDelegate, UITableVie
         super.viewDidLoad()
         goal = goals[selectedGoal]
         goalTitle.text = goal!.title
+        println(goal!.getCompletedRatio())
         goalProgressBar.setProgress(goal!.getCompletedRatio(), animated: true)
     }
 
@@ -37,6 +38,13 @@ class MilestoneViewController: UIViewController, UITableViewDelegate, UITableVie
         dateFormatter.dateFormat = "yyyy-MM-dd"
         cell.detailTextLabel!.text = dateFormatter.stringFromDate(goal!.milestones[indexPath.row].date)
         return cell
+    }
+    
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath){
+        if (editingStyle == UITableViewCellEditingStyle.Delete) {
+            goal!.milestones.removeAtIndex(indexPath.row)
+            milestonesTableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic)
+        }
     }
     
     // UITableViewDelegate methods

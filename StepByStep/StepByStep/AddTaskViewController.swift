@@ -1,6 +1,6 @@
 import UIKit
 
-class AddTaskViewController: UIViewController {
+class AddTaskViewController: UIViewController, UITextViewDelegate {
 
     @IBOutlet var taskTitle: UITextField!
     @IBOutlet var taskDetails: UITextView!
@@ -28,7 +28,12 @@ class AddTaskViewController: UIViewController {
     }
     
     func addATask() {
-        goals[selectedGoal].milestones[selectedMilestone].addTask(taskTitle.text, withContent: taskDetails.text)
+        goals[selectedGoal].milestones[selectedMilestone].addTodoTask(taskTitle.text, withContent: taskDetails.text)
         self.navigationController?.popViewControllerAnimated(true)
+    }
+    
+    func textViewShouldBeginEditing(textView: UITextView) -> Bool{
+        taskDetails.text = ""
+        return true
     }
 }

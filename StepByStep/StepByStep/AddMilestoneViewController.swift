@@ -20,7 +20,7 @@ class AddMilestoneViewController: UIViewController, UITextFieldDelegate{
     
     func textFieldShouldReturn(textField: UITextField) -> Bool{
         addAMilestone()
-        return true;
+        return true
     }
     
     func addAMilestone (){

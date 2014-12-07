@@ -1,6 +1,6 @@
 import UIKit
 
-class AddGoalViewController: UIViewController {
+class AddGoalViewController: UIViewController, UITextViewDelegate {
 
     @IBOutlet var goalDetails: UITextView!
     @IBOutlet var goalTitle: UITextField!
@@ -26,6 +26,11 @@ class AddGoalViewController: UIViewController {
     func addCurrentGoal(){
         goals.append(Goal(title: self.goalTitle.text, withDetails : self.goalDetails.text))
         self.navigationController?.popToRootViewControllerAnimated(true);
+    }
+    
+    func textViewShouldBeginEditing(textView: UITextView) -> Bool{
+        goalDetails.text = ""
+        return true
     }
 
 }
