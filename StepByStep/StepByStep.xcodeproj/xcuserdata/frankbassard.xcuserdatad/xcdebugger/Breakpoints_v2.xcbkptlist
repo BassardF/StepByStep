@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StepByStep/Milestone.swift"
-            timestampString = "433591764.465201"
+            timestampString = "440039149.166256"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
             landmarkName = "Milestone"
             landmarkType = "3">
          </BreakpointContent>
@@ -218,6 +218,22 @@
             startingLineNumber = "56"
             endingLineNumber = "56"
             landmarkName = "tableView(_:cellForRowAtIndexPath:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StepByStep/MilestoneViewController.swift"
+            timestampString = "440040312.947677"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "viewDidAppear(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

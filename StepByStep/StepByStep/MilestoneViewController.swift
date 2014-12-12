@@ -13,7 +13,9 @@ class MilestoneViewController: UIViewController, UITableViewDelegate, UITableVie
         super.viewDidLoad()
         goal = goals[selectedGoal]
         goalTitle.text = goal!.title
-        println(goal!.getCompletedRatio())
+    }
+    
+    override func viewDidAppear(_animated: Bool){
         goalProgressBar.setProgress(goal!.getCompletedRatio(), animated: true)
     }
 

@@ -23,10 +23,10 @@ class TasksViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         if section == 0 {
-            return goals[selectedGoal].milestones[selectedMilestone].getTasksCount() - goals[selectedGoal].milestones[selectedMilestone].getDoneTasksNumber()
+            return goals[selectedGoal].milestones[selectedMilestone].getTodoTasksCount()
         }
         else{
-            return goals[selectedGoal].milestones[selectedMilestone].getDoneTasksNumber()
+            return goals[selectedGoal].milestones[selectedMilestone].getDoneTasksCount()
         }
     }
     

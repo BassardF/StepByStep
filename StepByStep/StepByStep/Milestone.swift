@@ -34,16 +34,20 @@ class Milestone: NSObject {
         return todotasks.count + donetasks.count
     }
     
-    func getDoneTasksNumber() -> Int{
+    func getDoneTasksCount() -> Int{
         return donetasks.count
     }
     
+    func getTodoTasksCount() -> Int{
+        return todotasks.count
+    }
+    
     func getTasksDoneRatio() -> Double{
-        return Double(getDoneTasksNumber()) / Double(getTasksCount())
+        return Double(getDoneTasksCount()) / Double(getTasksCount())
     }
     
     func isDone() -> Bool {
-        return getTasksDoneRatio() == 1
+        return getTodoTasksCount() == 0 && getDoneTasksCount() != 0
     }
     
     func getDoneTaskNumber (doneTaskNumber : Int) -> Task {
